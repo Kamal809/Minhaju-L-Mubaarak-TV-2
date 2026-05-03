@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services - Minhaju-L-Mubarak TV</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f8f9fb;
+    color:#333;
+}
+
+/* HEADER (same as landing page) */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#0d1b2a;
+    color:#fff;
+    position:sticky;
+    top:0;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    margin-left:20px;
+    color:#fff;
+    text-decoration:none;
+}
+nav a:hover{
+    color:#e63946;
+}
+
+.book-btn{
+    margin-left:20px;
+    padding:8px 18px;
+    background:#e63946;
+    border:none;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+}
+.book-btn:hover{
+    background:#c1121f;
+}
+
+/* PAGE TITLE */
+.title{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.title h1{
+    font-size:32px;
+}
+
+/* SERVICE SECTION */
+.service{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 40px;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.service:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+.service-text{
+    flex:1;
+    max-width:500px;
+}
+
+.service-text h2{
+    margin-bottom:10px;
+}
+
+.service-text p{
+    margin-bottom:15px;
+}
+
+/* IMAGE */
+.service img{
+    width:420px;
+    border-radius:10px;
+}
+
+/* ANIMATED DUPLICATE */
+.animated{
+    opacity:0;
+    transform:translateX(100px);
+    animation:slideIn 1s ease forwards;
+}
+
+@keyframes slideIn{
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* CTA */
+.cta{
+    padding:60px 40px;
+    text-align:center;
+    background:#0d1b2a;
+    color:#fff;
+}
+
+.cta button{
+    margin-top:15px;
+    padding:12px 25px;
+    border:none;
+    background:#e63946;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cta button:hover{
+    background:#c1121f;
+}
+
+/* FOOTER */
+footer{
+    background:#000814;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+/* HAMBURGER ICON */
+.menu-icon{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HIDE CHECKBOX */
+#menu-toggle{
+    display:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .service{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .service img{
+        width:100%;
+    }
+    nav{
+        display:none;
+    }
+    .menu-icon{
+        display:block;
+        color:#fff;
+    }
+    .nav-menu{
+        position:absolute;
+        top:60px;
+        right:0;
+        background:#0d1b2a;
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+
+        max-height:0;
+        overflow:hidden;
+
+        transition:0.4s ease;
+    }
+
+    .nav-menu a,
+    .nav-menu button{
+        margin:15px 0;
+    }
+     /* WHEN CLICKED (OPEN MENU) */
+    #menu-toggle:checked ~ .nav-menu{
+        max-height:400px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- HAMBURGER TOGGLE -->
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        ☰
+    </label>
+    <h2>Minhaju-L-Mubarak TV</h2>
+    <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="minabout.html">About</a>
+        <a href="minservice.html">Service</a>
+        <a href="mincontact.html">Contact</a>
+        <a href="https://wa.me/2349031558287?text=Hello%20I%20want%20to%20book%20Minhaju-L-Mubarak%20TV%20for%20my%20event" target="_blank">
+        <button class="book-btn">Book Now</button>
+        </a>
+    </nav>
+</header>
+
+<section class="title">
+    <h1>Our Services</h1>
+    <p>We bring life, organization, and professional coverage to your events</p>
+</section>
+
+<!-- 1. MC -->
+<!-- <section class="service">
+    <div class="service-text">
+        <h2>🎤 Master of Ceremony</h2>
+        <p>We provide energetic and professional MC services that keep your audience engaged and your event flowing smoothly.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+</section> -->
+
+<section class="service animated">
+    <div class="service-text">
+        <h2>🎤 Master of Ceremony</h2>
+        <p>We provide energetic and professional MC services that keep your audience engaged and your event flowing smoothly.</p>
+    </div>
+    <img src="https://scontent-los4-1.xx.fbcdn.net/v/t39.30808-6/684551676_122195207870528224_4585282726414015160_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeH3v6UMNk7khcWw-LvL1G9KzrJvSghC5RzOsm9KCELlHMSS2SxpJPeIOOtIwRgaTRXVu98aO_0xgNi25vniHXHv&_nc_ohc=JRvx-FYb9ZkQ7kNvwGd7xxn&_nc_oc=Adq7_zd6IocsqbLGuvoXWDcOWmJDIpJcJy_Pps4CUfwA-oKKzsNZAIeRnUH_Rm1udG8&_nc_zt=23&_nc_ht=scontent-los4-1.xx&_nc_gid=F5r8UL0Za8TqQukAx-qhog&_nc_ss=7b2a8&oh=00_Af5vcky1jSuNQi3Xpyd68oygURUCSdOQh-QIkvZfXp_Nrg&oe=69FAF9BA">
+</section>
+
+<!-- 2. Live Coverage -->
+<!-- <section class="service">
+    <div class="service-text">
+        <h2>📺 Live Coverage</h2>
+        <p>We capture your event from beginning to end with high-quality video and broadcasting services.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+</section> -->
+
+<section class="service animated">
+    <div class="service-text">
+        <h2>📺 Live Coverage</h2>
+        <p>We capture your event from beginning to end with high-quality video and broadcasting services.</p>
+    </div>
+    <img src="https://scontent-los4-1.xx.fbcdn.net/v/t39.30808-6/481081658_665996975967285_3913132898821196756_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeGS8AEK8Qr0oiY5xK_Z_vaCMgmvDzXJb40yCa8PNclvjQBD4SuD2fYWpijtSo48QsQ5qZJAGD5vioDuQ_xBE5qp&_nc_ohc=fBSgOOyuZBEQ7kNvwG0A8Jf&_nc_oc=AdpWO6vqf4pcYgt7c-Gm3MDTYxm7Z2t4sx7wBPSV5K-lekDYc5YUjJDDlfj0IhD_1bA&_nc_zt=23&_nc_ht=scontent-los4-1.xx&_nc_gid=-inWISxTm7agFX4m1BK53A&_nc_ss=7b2a8&oh=00_Af5kzSjYQxZgf_EokZbVC0_5nhuX6zqF3Q-Hm_edP9u8Yw&oe=69FAF70E">
+</section>
+
+<!-- 3. Lecture -->
+<!-- <section class="service">
+    <div class="service-text">
+        <h2>📚 Lecture</h2>
+        <p>We organize and host educational lectures, seminars, and knowledge-sharing sessions.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df">
+</section> -->
+
+<section class="service animated">
+    <div class="service-text">
+        <h2>📚 Lecture</h2>
+        <p>Our lectures inspire, educate, and engage audiences with meaningful content delivery.</p>
+    </div>
+    <img src="https://scontent-los4-1.xx.fbcdn.net/v/t39.30808-6/487296859_686870373879945_32047431416819474_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeH4xvPp-wsMjho2qtZzR4TfC4vllDf_60wLi-WUN__rTAdwjswEY-dyWc8bRSpUuSbubPcyxIFlkGoq6VD9WFh4&_nc_ohc=rCooZPpK8v4Q7kNvwFOh3KU&_nc_oc=AdrVvbhet8UFHuNyAVhqpvpAxb_cCZOh8y9i1y7MxIf30cyYtveYgRoYD41zeaj0Z0Q&_nc_zt=23&_nc_ht=scontent-los4-1.xx&_nc_gid=zeGscjcx2av0wV9QLWfaoA&_nc_ss=7b2a8&oh=00_Af5BttIwx6KEKfb3rPV9NKqHySqdACpXgeFvMwmW_l3ROQ&oe=69FAD0D1">
+</section>
+
+<!-- 4. Modiu -->
+<!-- <section class="service">
+    <div class="service-text">
+        <h2>🎙️ Modiu</h2>
+        <p>Professional moderation of events, discussions, and panel sessions with clarity and control.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0">
+</section> -->
+
+<section class="service animated">
+    <div class="service-text">
+        <h2>🎙️ Modiu</h2>
+        <p>We ensure flow smoothly praise of the Noble Prophet and participants stay engaged and enjoy throughout.</p>
+    </div>
+    <img src="https://scontent-los4-1.xx.fbcdn.net/v/t39.30808-6/491615478_702373908996258_2849724959020445723_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFwg8SSJY1J_O_V_7_iXQuBykSl3VwLHgfKRKXdXAseB4hG9dclHenHuGMkzmcqfckDualFnlufhZcW2UEIFxGk&_nc_ohc=cAHMmhtaNDEQ7kNvwFepeKi&_nc_oc=Adr-qo4fXEwyoKEsRF3aYElGX4iKE54yeWv4XV-DyM6sfKQuU15vQXskVul8GhOIr70&_nc_zt=23&_nc_ht=scontent-los4-1.xx&_nc_gid=Z8X7vg7BEzGytKn7zwiABA&_nc_ss=7b2a8&oh=00_Af5Az-JZ3EirH3b8eHMYyLVhiBpaCrmtohNdcjVkhez73w&oe=69FAD5C4">
+</section>
+
+<!-- 5. Genius Land Agent -->
+<!-- <section class="service">
+    <div class="service-text">
+        <h2>🏡 Genius Land Agent</h2>
+        <p>We also assist clients in land acquisition and property advisory with trust and professionalism.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
+</section> -->
+
+<section class="service animated">
+    <div class="service-text">
+        <h2>🏡 Genius Land Agent</h2>
+        <p>We also assist clients in land acquisition and property advisory with trust and professionalism.</p>
+    </div>
+    <img src="https://scontent-los4-1.xx.fbcdn.net/v/t39.30808-6/684551676_122195207870528224_4585282726414015160_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeH3v6UMNk7khcWw-LvL1G9KzrJvSghC5RzOsm9KCELlHMSS2SxpJPeIOOtIwRgaTRXVu98aO_0xgNi25vniHXHv&_nc_ohc=JRvx-FYb9ZkQ7kNvwGd7xxn&_nc_oc=Adq7_zd6IocsqbLGuvoXWDcOWmJDIpJcJy_Pps4CUfwA-oKKzsNZAIeRnUH_Rm1udG8&_nc_zt=23&_nc_ht=scontent-los4-1.xx&_nc_gid=F5r8UL0Za8TqQukAx-qhog&_nc_ss=7b2a8&oh=00_Af5vcky1jSuNQi3Xpyd68oygURUCSdOQh-QIkvZfXp_Nrg&oe=69FAF9BA">
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h3>Ready to Make Your Event Exceptional?</h3>
+    <a href="https://calendly.com/kamaladeyemi777/30min" target="_blank">
+    <button>Book Appointment</button>
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Minhaju-L-Mubarak TV. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

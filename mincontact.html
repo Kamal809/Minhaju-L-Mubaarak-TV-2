@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Minhaju-L-Mubarak TV</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f8f9fb;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#0d1b2a;
+    color:#fff;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    margin-left:20px;
+    color:#fff;
+    text-decoration:none;
+}
+nav a:hover{
+    color:#e63946;
+}
+
+.book-btn{
+    margin-left:20px;
+    padding:8px 18px;
+    background:#e63946;
+    border:none;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+}
+.book-btn:hover{
+    background:#c1121f;
+}
+
+/* CONTACT SECTION */
+.contact{
+    display:flex;
+    padding:60px 40px;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+/* LEFT IMAGE */
+.contact img{
+    width:450px;
+    border-radius:10px;
+}
+
+/* FORM */
+.form-box{
+    flex:1;
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-box h2{
+    margin-bottom:15px;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+.form-box button{
+    padding:12px;
+    border:none;
+    background:#e63946;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.form-box button:hover{
+    background:#c1121f;
+}
+
+/* INFO SECTION */
+.info{
+    padding:40px;
+    text-align:center;
+}
+
+.map{
+    margin:20px 0;
+}
+
+/* SOCIAL */
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    margin:10px;
+    text-decoration:none;
+    color:#e63946;
+    font-weight:600;
+}
+
+/* WHATSAPP QR */
+.qr{
+    margin-top:30px;
+}
+
+/* CTA */
+.cta{
+    padding:60px 40px;
+    text-align:center;
+    background:#0d1b2a;
+    color:#fff;
+}
+
+.cta button{
+    margin-top:15px;
+    padding:12px 25px;
+    border:none;
+    background:#e63946;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cta button:hover{
+    background:#c1121f;
+}
+
+/* FOOTER */
+footer{
+    background:#000814;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+/* HAMBURGER ICON */
+.menu-icon{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HIDE CHECKBOX */
+#menu-toggle{
+    display:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .contact{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .contact img{
+        width:100%;
+    }
+    nav{
+        display:none;
+    }
+    .menu-icon{
+        display:block;
+        color:#fff;
+    }
+    .nav-menu{
+        position:absolute;
+        top:60px;
+        right:0;
+        background:#0d1b2a;
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+
+        max-height:0;
+        overflow:hidden;
+
+        transition:0.4s ease;
+    }
+
+    .nav-menu a,
+    .nav-menu button{
+        margin:15px 0;
+    }
+     /* WHEN CLICKED (OPEN MENU) */
+    #menu-toggle:checked ~ .nav-menu{
+        max-height:400px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- HAMBURGER TOGGLE -->
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        ☰
+    </label>
+    <h2>Minhaju-L-Mubarak TV</h2>
+    <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="minabout.html">About</a>
+        <a href="minservice.html">Service</a>
+        <a href="mincontact.html">Contact</a>
+        <a href="https://wa.me/2349031558287?text=Hello%20I%20want%20to%20book%20Minhaju-L-Mubarak%20TV%20for%20my%20event" target="_blank">
+        <button class="book-btn">Book Now</button>
+        </a>
+    </nav>
+</header>
+
+<!-- CONTACT FORM -->
+<section class="contact">
+
+    <img src="https://scontent-los4-1.xx.fbcdn.net/v/t39.30808-6/484902445_675360745030908_6077133849483071923_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGo-bLL5NZJFNpTZ48Af4OoSRgo6e6NnXZJGCjp7o2ddgyitlCai4qKmvWWzoIV0iugrpVriGpUOt9dInoXSQfd&_nc_ohc=ap4dKyPSIGMQ7kNvwH3Eqsn&_nc_oc=Adqizow97fSGdudyeNmfiqsOK6F5wxSsgDWi1GokQlWikCLUnLJJ5VeRmh-eK62MGmE&_nc_zt=23&_nc_ht=scontent-los4-1.xx&_nc_gid=D5oQEY5NnjzUyAvMrzevbQ&_nc_ss=7b2a8&oh=00_Af7nOCq2IEc4vBRE5qFBdgFDD2EnecgQQgexjeyL4i_7Jg&oe=69FACEDF" alt="Event Image">
+
+    <div class="form-box">
+        <h2>Contact Us</h2>
+
+        <form action="https://formspree.io/f/mojragyb/your-id" method="post">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+
+            <select required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <input type="text" placeholder="Location" required>
+            <input type="text" placeholder="Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="4" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+<!-- INFO -->
+<section class="info">
+
+    <h3>Our Office Address</h3>
+    <p>Abuja, Federal Capital Territory, Nigeria</p>
+
+    <!-- MAP -->
+    <div class="map">
+        <iframe 
+        src="https://maps.google.com/maps?q=Abuja&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="300" style="border:0;"></iframe>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="social">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+    </div>
+
+    <!-- WHATSAPP QR -->
+    <div class="qr">
+        <h4>Scan to Chat on WhatsApp</h4>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/234XXXXXXXXXX" alt="QR Code">
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h3>Ready to Make Your Event Exceptional?</h3>
+    <a href="https://calendly.com/kamaladeyemi777/30min" target="_blank">
+    <button>Book Appointment</button>
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Minhaju-L-Mubarak TV. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
