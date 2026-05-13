@@ -99,7 +99,7 @@ button:hover{
                 <h2>Sign Up</h2>
             </div>
 
-            <form action="minsignup.html">
+            <form action="index.html">
                 <div class="input-box">
                     <input type="text" placeholder="Full Name" required>
                 </div>
@@ -126,10 +126,19 @@ button:hover{
 
                 <div class="switch">
                     Already have an account?
-                        <a href="minsignup.html">Login</a>
+                        <a href="index.html">Login</a>
                 </div>
             </form>
 
         </div>
+        <script>
+            document.querySelector('button').addEventListener('click', function (e) {
+                e.preventDefault();
+                setTimeout(function () {
+                    alert('Login successful! Redirecting to home page...');
+                }, 1000);
+                window.location.href = 'index.html';
+            });
+        </script>
 </body>
 </html>
