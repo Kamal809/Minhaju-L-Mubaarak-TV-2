@@ -21,8 +21,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop');
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     background-size:cover;
     background-position:center;
     padding:20px;
@@ -91,7 +90,6 @@ body{
 
 .input-box input{
     width:100%;
-    margin-bottom: 12px;
     padding:14px;
     border:none;
     outline:none;
@@ -105,10 +103,9 @@ body{
 }
 
 /* Button */
-.button{
+button{
     width:100%;
     padding:14px;
-    margin-left: 150px;
     border:none;
     border-radius:10px;
     background:#005792;
@@ -119,7 +116,7 @@ body{
     transition:0.3s;
 }
 
-.button:hover{
+button:hover{
     background:#001f3f;
     transform:scale(1.02);
 }
@@ -170,9 +167,6 @@ body{
     .left{
         padding:40px 20px;
     }
-    .button{
-        margin-left: 200px;
-    }
 
     .left h1{
         font-size:28px;
@@ -180,7 +174,7 @@ body{
 }
 </style>
 </head>
-<body>
+<body data-bg-src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" data-bg-gradient="linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))">
 
 <div class="container">
 
@@ -206,7 +200,8 @@ body{
                 <h2>Login</h2>
             </div>
 
-        </div>
+            <form action="index.html">
+
     <div class="input-box">
         <input type="email" placeholder="Email Address" required>
     </div>
@@ -214,16 +209,25 @@ body{
     <div class="input-box">
         <input type="password" placeholder="Password" required>
     </div>
-    <a href="minhome.html" class="button">Login</a>
+
+    <button type="submit">Login</button>
 
     <div class="switch">
         Don't have an account?
         <a href="misign.html">Sign Up</a>
     </div>
 
-</form> 
+</form>
+            </form>
+
+        </div>
+
+        
+
     </div>
 </div>
 
+<script src="fetch-images.js"></script>
 </body>
 </html>
+
